@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(92, 92, 186);
+    /* background-color: rgb(92, 92, 186); */
 }
 
 .uper-container{
@@ -70,7 +70,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: black;
+    color: white;
     border-radius: 10px;
 }
 
@@ -80,7 +81,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: black;
+    color: white;
     border-radius: 10px;
 }
 
@@ -90,7 +92,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: black;
+    color: white;
     border-radius: 10px;
 }
 
