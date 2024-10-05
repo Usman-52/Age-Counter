@@ -1,19 +1,25 @@
-var btn = document.getElementById("calcBtn");
+var calcBtn = document.getElementById("calcBtn");
+var inputDate = document.getElementById("date");
+var box1 = document.getElementById("box1");
+var box2 = document.getElementById("box2");
+var box3 = document.getElementById("box3");
+var currentDate = new Date();
+calcBtn.addEventListener("click", function (event) {
+     event.preventDefault();
+     var dateInput = document.getElementById("date").value;
+     if(dateInput === "") {
+          alert("🚫 Enter Your BirthDay First:");
+     }
+     else{
+          var currentDate = new Date();
+          var birthDate = new Date(dateInput);
+          if(birthDate > currentDate) {
+               alert("⛔ You Can't Enter Future Date")
+          }
+     }
 
-btn.addEventListener("click", () => {
-     var  birthDate = document.getElementById("date");
-    const birthDateValue = new Date(birthDate.value) 
-    console.log(birthDateValue)
-    const currentDate = new Date();
+   
 
-    const year = currentDate.getFullYear() - birthDateValue.getFullYear();
-    console.log(year)
-
-     const days = currentDate.getDate() - birthDateValue.getDate();
-     console.log("The Day is ", days)
-
-     const month = currentDate.getMonth() - birthDateValue.getMonth();
-     console.log(month)
 
 
      
