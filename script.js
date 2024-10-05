@@ -18,6 +18,15 @@ calcBtn.addEventListener("click", function (event) {
           }
      }
 
+     //* Now we will get Current year and input year then we will (c-year - input year)
+
+     var currentYear = currentDate.getFullYear();
+     var birthYear = birthDate.getFullYear();
+
+     var year = currentYear - birthYear;
+     var box1 = document.getElementById("box1");
+     box1.textContent = year;
+
    
 
 
