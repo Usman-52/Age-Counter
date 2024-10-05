@@ -27,7 +27,22 @@ calcBtn.addEventListener("click", function (event) {
      var box1 = document.getElementById("box1");
      box1.textContent = year;
 
+     //* Now we will getting Month
+
+     var currentMonth = currentDate.getMonth();
+     var birthMonth = birthDate.getMonth();
+
+    var month = currentMonth - birthMonth;
+    
+    if (month) {
+         month += 12 // 11
+         // console.log(month)
+     }
+     box2.textContent = month;
+
+
    
+
 
 
 
