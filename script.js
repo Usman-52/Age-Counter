@@ -40,12 +40,16 @@ calcBtn.addEventListener("click", function (event) {
      }
      box2.textContent = month;
 
+       //* Getting days
 
-   
-
-
-
-
-     
+       var currentDay = currentDate.getDate();
+       var birthDay = birthDate.getDate();
+       var day = currentDay - birthDay;
+  
+       if(day) {
+            day = day + 30;
+       }
+  
+       box3.textContent = day;  
 })
 
